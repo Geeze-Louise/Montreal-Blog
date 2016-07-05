@@ -1,0 +1,14 @@
+---
+layout: page
+title: Montreal Blog posts
+---
+	<h3>Blog posts</h3>
+	<p>Click on any of the posts below and find out a little bit more about our life in Montreal. </p>
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
